@@ -1,11 +1,4 @@
-'''
-Author: Naiyuan liu
-Github: https://github.com/NNNNAI
-Date: 2021-11-23 17:03:58
-LastEditors: Naiyuan liu
-LastEditTime: 2021-11-24 16:45:41
-Description: 
-'''
+
 from __future__ import division
 import collections
 import numpy as np
@@ -68,14 +61,7 @@ class Face_detect_crop:
         if bboxes.shape[0] == 0:
             return None
         ret = []
-        # for i in range(bboxes.shape[0]):
-        #     bbox = bboxes[i, 0:4]
-        #     det_score = bboxes[i, 4]
-        #     kps = None
-        #     if kpss is not None:
-        #         kps = kpss[i]
-        #     M, _ = face_align.estimate_norm(kps, crop_size, mode ='None') 
-        #     align_img = cv2.warpAffine(img, M, (crop_size, crop_size), borderValue=0.0)
+
         align_img_list = []
         M_list = []
         for i in range(bboxes.shape[0]):
@@ -87,14 +73,5 @@ class Face_detect_crop:
             align_img_list.append(align_img)
             M_list.append(M)
 
-        # det_score = bboxes[..., 4]
-
-        # best_index = np.argmax(det_score)
-
-        # kps = None
-        # if kpss is not None:
-        #     kps = kpss[best_index]
-        # M, _ = face_align.estimate_norm(kps, crop_size, mode ='None') 
-        # align_img = cv2.warpAffine(img, M, (crop_size, crop_size), borderValue=0.0)
         
         return align_img_list, M_list
