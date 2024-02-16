@@ -1,8 +1,6 @@
 import dominate
 from dominate.tags import *
 import os
-
-
 class HTML:
     def __init__(self, web_dir, title, refresh=0):
         self.title = title
