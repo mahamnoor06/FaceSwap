@@ -1,8 +1,8 @@
 import os
 import shutil
 
-src_path = "/content/FaceSwap/CelebAMask-HQ/CelebA-HQ-img"
-dest_path = "/content/FaceSwap/CelebA-HQ-img_Train"
+src_path = "./CelebAMask-HQ/CelebA-HQ-img"
+dest_path = "./CelebA-HQ-img_Train"
 
 src_dir = os.listdir(path=src_path)
 curr_iter = 0
