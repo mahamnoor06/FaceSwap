@@ -128,7 +128,7 @@ if __name__ == '__main__':
 
     model.initialize(opt)
 
-    #####################################################
+    ####################################################
     if opt.use_tensorboard:
         tensorboard_writer  = tensorboard.SummaryWriter(log_path)
         logger              = tensorboard_writer
