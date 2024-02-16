@@ -1,11 +1,3 @@
-'''
-Author: Naiyuan liu
-Github: https://github.com/NNNNAI
-Date: 2021-11-15 19:42:42
-LastEditors: Naiyuan liu
-LastEditTime: 2021-11-15 20:01:47
-Description: 
-'''
 
 import cv2
 import numpy as np
@@ -41,14 +33,7 @@ ffhq_src = np.array([[192.98138, 239.94708], [318.90277, 240.1936], [256.63416, 
                                            [201.26117, 371.41043], [313.08905, 371.15118]])
 ffhq_src = np.expand_dims(ffhq_src, axis=0)
 
-# arcface_src = np.array(
-#     [[38.2946, 51.6963], [73.5318, 51.5014], [56.0252, 71.7366],
-#      [41.5493, 92.3655], [70.7299, 92.2041]],
-#     dtype=np.float32)
 
-# arcface_src = np.expand_dims(arcface_src, axis=0)
-
-# In[66]:
 
 
 # lmk is prediction; src is template
